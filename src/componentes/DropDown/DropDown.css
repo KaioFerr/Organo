@@ -1,15 +1,23 @@
-.TextField {
-    margin: 24px 0;
-}
-
-.TextField label {
+.DropDown label {
     display: block;
     margin-bottom: 8px;
     font-size: 24px;
     font-weight: 500;
 }
 
-.TextField input {
+.DropDown option {
+    background-color: #fff;
+    box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.06);
+    width: 100%;
+    border: none;
+    font-size: 24px;
+    padding: 24px;
+    box-sizing: border-box;
+    
+}
+
+.DropDown select {
+    
     background-color: #fff;
     box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.06);
     width: 100%;
@@ -18,4 +26,3 @@
     padding: 24px;
     box-sizing: border-box;
 }
-

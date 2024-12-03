@@ -3,10 +3,14 @@ const TextField = (props) => {
 
     const placeholder = `${props.placeholder}...`
 
+    const type = (evento) => {
+        props.changed(evento.target.value)
+    }
+
     return (
         <div className="TextField">
             <label>{props.label}</label>
-            <input placeholder={placeholder}></input>
+            <input value={props.value} onChange={type} required={props.obrigatorio} placeholder={placeholder}></input>
         </div>
     )
 }
