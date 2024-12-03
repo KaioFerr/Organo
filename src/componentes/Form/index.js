@@ -34,20 +34,20 @@ const Form = () => {
                     label="Nome"
                     placeholder="Digite seu nome"
                     value={nome}
-                    changed={value => setNome(value)}
+                    handleChange={value => setNome(value)}
                 />
                 <TextField
                     obrigatorio={true}
                     label="Cargo"
                     placeholder="Digite seu cargo" 
                     value={cargo}
-                    changed={value => setCargo(value)}
+                    handleChange={value => setCargo(value)}
                 />
                 <TextField 
                     label="Imagem"
                     placeholder="Digite o endereço da imagem"
                     value={imagem}
-                    changed={value => setImagem(value)}
+                    handleChange={value => setImagem(value)}
                 />
                 <DropDown 
                     obrigatorio={true} 
