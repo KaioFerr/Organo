@@ -1,5 +1,5 @@
-import './TextFieldForm.css'
-const TextField = (props) => {
+import './InputsForm.css'
+const InputsForm = (props) => {
 
     const placeholder = `${props.placeholder}...`
 
@@ -8,11 +8,11 @@ const TextField = (props) => {
     }
 
     return (
-        <div className="TextField">
+        <div className="InputsForm">
             <label>{props.label}</label>
             <input value={props.value} onChange={typed} required={props.obrigatorio} placeholder={placeholder}></input>
         </div>
     )
 }
 
-export default TextField
+export default InputsForm

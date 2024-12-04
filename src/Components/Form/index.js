@@ -1,5 +1,5 @@
 import './Form.css'
-import TextField from '../TextFieldForm';
+import InputsForm from '../InputsForm';
 import DropDown from '../DropDown';
 import Button from '../Button';
 import { useState } from 'react';
@@ -34,21 +34,21 @@ const Form = (props) => {
         <section className='Form'>
             <form onSubmit={onSaved}>
                 <h2>Preencha os dados para criar o card do colaborador.</h2>
-                <TextField
+                <InputsForm
                     obrigatorio={true}
                     label="Nome"
                     placeholder="Digite seu nome"
                     value={nome}
                     onChanged={value => setNome(value)}
                 />
-                <TextField
+                <InputsForm
                     obrigatorio={true}
                     label="Cargo"
                     placeholder="Digite seu cargo" 
                     value={cargo}
                     onChanged={value => setCargo(value)}
                 />
-                <TextField 
+                <InputsForm 
                     label="Imagem"
                     placeholder="Digite o endereço da imagem"
                     value={imagem}

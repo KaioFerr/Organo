@@ -1,7 +1,7 @@
 .DropDown label {
     display: block;
     margin-bottom: 8px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -10,8 +10,8 @@
     box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.06);
     width: 100%;
     border: none;
-    font-size: 24px;
-    padding: 24px;
+    font-size: 20px;
+    padding: 20px;
     box-sizing: border-box;
     
 }
@@ -22,7 +22,22 @@
     box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.06);
     width: 100%;
     border: none;
-    font-size: 24px;
-    padding: 24px;
+    font-size: 20px;
+    padding: 20px;
     box-sizing: border-box;
+}
+
+
+@media (max-width: 480px) {
+    .DropDown label {
+        font-size: 14px;
+    }
+
+    .DropDown option {
+        font-size: 14px;
+    }
+
+    .DropDown select {
+        font-size: 14px;
+    }
 }

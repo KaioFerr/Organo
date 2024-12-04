@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Banner from './componentes/Banner';
-import Form from './componentes/Form'
+import Banner from './Components/Banner';
+import Form from './Components/Form'
 function App() {
 
   const [collaborators, setCollaborators] = useState([])

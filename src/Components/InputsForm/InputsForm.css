@@ -1,0 +1,33 @@
+.InputsForm {
+    margin: 24px 0;
+}
+
+.InputsForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.InputsForm input {
+    background-color: #fff;
+    box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.06);
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+    .InputsForm label {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+    .InputsForm input {
+        
+        font-size: 14px;
+        
+    }
+}

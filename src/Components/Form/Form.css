@@ -1,0 +1,36 @@
+.Form {
+    display: flex;
+    justify-content: center;
+    margin: 48px 0;
+}
+
+.Form form {
+    max-width: 70%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 36px 64px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.16);
+}
+
+
+@media (max-width: 768px) {
+    .Form {
+        margin: 32px 0; 
+        box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.10);
+    }
+
+    .Form form {
+        max-width: 90%; 
+        padding: 40px 32px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .Form form {
+        max-width: 100%; 
+        padding: 16px 24px; 
+        margin: 20px;
+        font-size: 14px;
+        padding: 24px 32px;
+    }
+}
