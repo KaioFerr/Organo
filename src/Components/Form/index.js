@@ -5,28 +5,19 @@ import Button from '../Button';
 import { useState } from 'react';
 const Form = (props) => {
 
-    const times = [
-        'Programação',
-        'Front-end',
-        'Data Sciencie',
-        'UX e Design',
-        'Mobile',
-        'Inovação e Gestão'
-    ]
-
-    const [nome, setNome] = useState('')
-    const [cargo, setCargo] = useState('')
-    const [imagem, setImagem] = useState('')
-    const [time, setTime] = useState('Programação')
+    const [name, setName] = useState('')
+    const [responsibility, setResponsibility] = useState('')
+    const [image, setImage] = useState('')
+    const [teams, setTeams] = useState('Programação')
 
 
     const onSaved = (evento) => {
         evento.preventDefault()
         props.onCollaboratorAdded({
-            nome,
-            cargo,
-            imagem,
-            time
+            name,
+            responsibility,
+            image,
+            teams
         })
     }
 
@@ -35,31 +26,32 @@ const Form = (props) => {
             <form onSubmit={onSaved}>
                 <h2>Preencha os dados para criar o card do colaborador.</h2>
                 <InputsForm
-                    obrigatorio={true}
+                    required={true}
                     label="Nome"
                     placeholder="Digite seu nome"
-                    value={nome}
-                    onChanged={value => setNome(value)}
+                    value={name}
+                    onChanged={value => setName(value)}
                 />
                 <InputsForm
-                    obrigatorio={true}
+                    required={true}
                     label="Cargo"
                     placeholder="Digite seu cargo" 
-                    value={cargo}
-                    onChanged={value => setCargo(value)}
+                    value={responsibility}
+                    onChanged={value => setResponsibility(value)}
                 />
                 <InputsForm 
+                    required={false}
                     label="Imagem"
                     placeholder="Digite o endereço da imagem"
-                    value={imagem}
-                    onChanged={value => setImagem(value)}
+                    value={image}
+                    onChanged={value => setImage(value)}
                 />
                 <DropDown 
-                    obrigatorio={true} 
+                    required={true}
                     label="Time"
-                    itens={times} 
-                    value={time}
-                    onChanged={value => setTime(value)}
+                    itens={props.team} 
+                    value={teams}
+                    onChanged={value => setTeams(value)}
                 />
                 <Button>Criar Card</Button>
             </form>

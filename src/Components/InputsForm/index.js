@@ -10,7 +10,7 @@ const InputsForm = (props) => {
     return (
         <div className="InputsForm">
             <label>{props.label}</label>
-            <input value={props.value} onChange={typed} required={props.obrigatorio} placeholder={placeholder}></input>
+            <input value={props.value} onChange={typed} required={props.required} placeholder={placeholder}></input>
         </div>
     )
 }
