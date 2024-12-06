@@ -8,7 +8,7 @@ const Form = (props) => {
     const [name, setName] = useState('')
     const [responsibility, setResponsibility] = useState('')
     const [image, setImage] = useState('')
-    const [teams, setTeams] = useState('Programação')
+    const [teams, setTeams] = useState('')
 
 
     const onSaved = (evento) => {
@@ -19,6 +19,11 @@ const Form = (props) => {
             image,
             teams
         })
+
+        setName('')
+        setResponsibility('')
+        setImage('')
+        setTeams('')
     }
 
     return (
